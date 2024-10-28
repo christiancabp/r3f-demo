@@ -1,9 +1,18 @@
 ## Starting point.
 
 - I will be using a `react` vite app generated with vite's command line.
-```npm create vite@latest```
+
+```
+npm create vite@latest
+```
+
 - I have installed some dependancies for three.js libraries check package json
-- We will be using `react` and `jsx` which is just javascript and html.
+
+```
+npm install @react-three/drei @react-three/fiber three
+```
+
+- We will be using `react` and `jsx` which is just javascript and html. run `npm run dev` to start project.
 
 ### 1. Create 3D scene.
 
@@ -37,7 +46,7 @@ Let's add something to the screen.
 	<OrbitControls makeDefault />
 ```
 
-### 3.  Get a 3D model.
+### 3. Get a 3D model.
 
 - I have downloaded a model fount in pmnd market and I placed it in the public folder.
 
@@ -46,7 +55,7 @@ Let's add something to the screen.
 
 - Now we can add the model to the scene and update its the position using `position-y={-1.2}`.
 
-### 4.  Add environment.
+### 4. Add environment.
 
 Model is dark and the environment seems bad lets add some background and some environment preset to light up the scene.
 
@@ -58,7 +67,7 @@ Model is dark and the environment seems bad lets add some background and some en
     <Environment preset='city' />
 ```
 
-### 5.  Make model float and add presentation controls.
+### 5. Make model float and add presentation controls.
 
 `Float`
 We can animate the model very easy using the `<Float>` helper. We will wrap the model in this tag.
