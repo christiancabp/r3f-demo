@@ -1,7 +1,7 @@
 ## Starting point.
 
 - I will be using a `react` vite app generated with vite's command line.
-  `npm create vite@latest`
+```npm create vite@latest```
 - I have installed some dependancies for three.js libraries check package json
 - We will be using `react` and `jsx` which is just javascript and html.
 
