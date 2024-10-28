@@ -10,16 +10,16 @@
    In three.js everything 3D happens inside a canvas html element where we create a scene. `@react-three/fiber` has a Canvas component with everything a scene needs.
 
 ```
-    <Canvas
-		className='r3f'
-		camera={{
-		fov: 45,
-		near: 0.1,
-		far: 2000,
-		position: [-3.5, 1.5, 7],
-		}}>
+<Canvas
+	className='r3f'
+	camera={{
+	fov: 45,
+	near: 0.1,
+	far: 2000,
+	position: [-3.5, 1.5, 7],
+	}}>
         {/* 3D Scene */}
-	</Canvas>
+</Canvas>
 ```
 
 2. Show box mesh.
