@@ -5,9 +5,9 @@
 - I have installed some dependancies for three.js libraries check package json
 - We will be using `react` and `jsx` which is just javascript and html.
 
-1. Create 3D scene.
+### 1. Create 3D scene.
 
-   In three.js everything 3D happens inside a canvas html element where we create a scene. `@react-three/fiber` has a Canvas component with everything a scene needs.
+In three.js everything 3D happens inside a canvas html element where we create a scene. `@react-three/fiber` has a Canvas component with everything a scene needs.
 
 ```
 <Canvas
@@ -22,9 +22,9 @@
 </Canvas>
 ```
 
-2. Show box mesh.
+### 2. Show box mesh.
 
-   Let's add something to the screen.
+Let's add something to the screen.
 
 ```
 	{/* Box Mesh */}
@@ -37,18 +37,18 @@
 	<OrbitControls makeDefault />
 ```
 
-3.  Get a 3D model.
+### 3.  Get a 3D model.
 
-    - I have downloaded a model fount in pmnd market and I placed it in the public folder.
+- I have downloaded a model fount in pmnd market and I placed it in the public folder.
 
-    - After adding model to public folder we can run this command to turn 3D model into jsx.  
-       `npx gltfjsx public/laptop-model.gltf --transform`
+- After adding model to public folder we can run this command to turn 3D model into jsx.  
+  `npx gltfjsx public/laptop-model.gltf --transform`
 
-    - Now we can add the model to the scene and update its the position using `position-y={-1.2}`.
+- Now we can add the model to the scene and update its the position using `position-y={-1.2}`.
 
-4.  Add environment.
+### 4.  Add environment.
 
-    Model is dark and the environment seems bad lets add some background and some environment preset to light up the scene.
+Model is dark and the environment seems bad lets add some background and some environment preset to light up the scene.
 
 ```
     {/* Background color */}
@@ -58,10 +58,9 @@
     <Environment preset='city' />
 ```
 
-5.  Make model float and add presentation controls.
+### 5.  Make model float and add presentation controls.
 
 `Float`
-
 We can animate the model very easy using the `<Float>` helper. We will wrap the model in this tag.
 
 ```
@@ -86,7 +85,7 @@ We can limit the allowed range of drag and drop and also animate it. Wrapping th
     </PresentationControls>
 ```
 
-6. Embed iframe.
+### 6. Embed iframe.
 
 Lets add an actual website to the laptop screen
 
@@ -102,7 +101,7 @@ Lets add an actual website to the laptop screen
 	</Html>
 ```
 
-7. Text in 3D.
+### 7. Text in 3D.
 
 Finally we can add some text to appear foaling in the scene as well.
 
@@ -121,10 +120,10 @@ Finally we can add some text to appear foaling in the scene as well.
 
 ## Links
 
-Vite - https://vite.dev/guide/
-Models - https://market.pmnd.rs/
-Three.js - https://threejs.org/
-React-three-fiber - https://github.com/pmndrs/react-three-fiber
-macbook model - https://market.pmnd.rs/model/macbook
-(gltf --> jsx) converter cli - https://github.com/pmndrs/gltfjsx
-(gltf --> jsx) converter webpage - https://gltf.pmnd.rs/
+- Vite - https://vite.dev/guide/
+- Models - https://market.pmnd.rs/
+- Three.js - https://threejs.org/
+- React-three-fiber - https://github.com/pmndrs/react-three-fiber
+- macbook model - https://market.pmnd.rs/model/macbook
+- (gltf --> jsx) converter cli - https://github.com/pmndrs/gltfjsx
+- (gltf --> jsx) converter webpage - https://gltf.pmnd.rs/
